@@ -1,0 +1,59 @@
+body {
+    margin: 40px;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+  }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+
+.lt-grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "topbar topbar topbar topbar" "LeftBar BodyContainer BodyContainer RightBar" 
+                        "LeftBar BodyContainer BodyContainer RightBar" "LeftBar Footer Footer RightBar";
+}
+
+.lt-topbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "heading heading heading" "topnavbar topnavbar topnavbar";
+	grid-area: lt-topbar;
+}
+.lt-LeftBar {
+	grid-area: lt-LeftBar;
+}
+
+.lt-Footer {
+	grid-area: lt-Footer;
+}
+
+.lt-RightBar {
+	grid-area: lt-RightBar;
+}
+
+.lt-BodyContainer {
+	grid-area: lt-BodyContainer;
+}
+
+
+.lt-heading {
+	grid-area: lt-heading;
+}
+
+.lt-topnavbar {
+	grid-area: lt-topnavbar;
+}
